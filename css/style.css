@@ -1,0 +1,207 @@
+body {
+	background-color: #aedfe4;
+	font-family: 'Nunito', sans-serif;
+}
+
+.wrapper {
+	max-width: 85%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 {
+	margin-bottom: 15px;
+}
+
+.instructions p {
+	text-align: left;
+}
+
+.random-number-box {
+	background-color: #ecd9ae;
+	border-radius: 10px;
+	height: 100px;
+}
+
+.boxes-ship-can-hold {
+	font-size: 50px;
+}
+
+#users-score {
+	font-size: 50px;
+}
+
+.total-score {
+	background-color: #ecd9ae;
+	margin-top: 10px;
+	border-radius: 10px;
+	height: 100px;
+}
+
+.scoreboard {
+	background-color: #ecd9ae;
+	margin-top: 10px;
+	border-radius: 10px;
+	height: 100px;
+}
+
+
+
+/**** CRATES & BOXES ****/
+
+#crate-1, #crate-2, #crate-3, #crate-4 {
+	height: 115px;
+	width: 95px;
+	display: inline-block;
+	padding: 5px;
+}
+
+
+.box {
+	height: 40px;
+	padding: 2px;
+	display: inline-block;
+}
+
+
+
+/**** CARGO SHIP DESIGN ****/
+
+.cargo-ship {
+	height: 68px;
+	width: 100%;
+	border-radius: 10px;
+	background-color: #0458b0;
+	border-bottom: 20px solid #c52d22;
+	display: block;
+
+}
+
+.cargo-ship-left {
+	height: 115px;
+	background-color: #fcffff;
+	width: 30%;
+	border-radius: 5px;
+}
+
+.cargo-ship-steamer {
+	height: 148px;
+	background-color: #b8b6bb;
+	border-top: 10px solid #c52d22;
+	width: 60px;
+	margin-bottom: -70px;
+}
+
+.cargo-ship-top-left {
+	height: 70px;
+	background-color: #fcffff;
+	border-top: 5px solid #b8b6bb;
+	width: 150px;
+}
+
+.cargo-ship-right {
+	width: 70%;
+	height: 115px;
+	float: right;
+	display: inline-block;
+	transform: rotate(180deg) scaleX(-1);
+}
+
+.windows {
+	display: inline-block;
+	padding: 20px;
+}
+
+.window {
+	height: 25px;
+	width: 20px;
+	display: inline-block;
+	border-radius: 2px;		
+	background-color: #86b2be;
+    background: -webkit-linear-gradient(left top, #52808e, #84abaf, #fff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #52808e, #84abaf, #fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #52808e, #84abaf, #fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #52808e, #84abaf, #fff); /*  Standard syntax */
+}
+
+.window-row2 {
+	padding-top: 20px;
+}
+
+
+
+@media screen and (max-width: 495px) {
+
+	#crate-1, #crate-2, #crate-3, #crate-4 {
+		height: 80px;
+		width: 65px;
+		display: inline-block;
+		padding: 2px;
+	}
+
+	.cargo-ship-left, .cargo-ship-top-left, .cargo-ship-steamer {
+		display: none;
+	}
+
+	.cargo-ship-right {
+		width: 100%;
+	}
+
+	.box {
+		height: 30px;
+	}
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+	.cargo-ship-top-left {
+		display: none;
+	}
+
+
+	.random-number-box, .total-score, .scoreboard {
+		height: 100px;
+		width: 30%;
+		display: inline-block;
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 240px;
+	}
+
+	.boxes-ship-can-hold, #users-score {
+		font-size: 30px;
+	}
+
+	.random-number-box {
+		margin-top: 10px;
+	}
+
+}
+
+
+
+@media screen and (max-width: 991px) {
+	.cargo-ship-left {
+		margin-bottom: -115px;
+	}
+
+
+}
+
+
+
+@media screen and (max-width: 1001px) {
+	.window-row2 {
+		display: none;
+	}
+
+	.crate-images {
+		margin-bottom: 130px;
+	}
+
+}
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Don't Sink the Cargo Ship!</title>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+
+<div class="container wrapper">
+<h1>Don't Sink the Cargo Ship!</h1>
+	<div class="row">
+		<div class="col-sm-8 col-md-6 instructions col-md-offset-1">
+			<p>You will be given a random number of boxes the cargo ship can hold.</p>
+			<p>There are four crates below. By clicking on a crate you discover the hidden number of boxes that crate holds and these boxes get loaded on to the ship.</p>
+			<p>You win the game by loading the exact same number of boxes that the ship can hold. If you load too many boxes than the ship can hold, you lose the game!</p>
+			<p>Each time when the game starts, the number of boxes in each crate changes.</p>
+			<p>Don't sink the cargo ship!</p>
+			<div class="crate-images">
+				<img id="crate-1" class="crate" src="images/red-crate.png">
+				<img id="crate-2" class="crate" src="images/brown-crate.png">
+				<img id="crate-3" class="crate" src="images/orange-crate.png">
+				<img id="crate-4" class="crate" src="images/green-crate.png">
+			</div>
+		</div>
+
+		<div class="col-sm-4 col-md-4">
+			<div class="row random-number-box">
+				<p>Boxes ship can hold: </br><span class="boxes-ship-can-hold"></span></p>
+			</div>
+
+			<div class="row total-score">
+				<p>Boxes on ship: </br><span id="users-score"></span></p>
+
+			</div>
+			
+			<div class="row scoreboard">
+				<p><span id="win-or-lose"></span></p>
+				<p>Wins: <span id="wins"></span></p>
+				<p>Losses: <span id="losses"></span></p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="cargo-ship-steamer"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-2 cargo-ship-top-left col-md-offset-1">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4 cargo-ship-left">
+			<div class="windows">
+				<div class="window-row1">
+					<div class="window"></div>
+					<div class="window"></div>
+					<div class="window"></div>
+					<div class="window"></div>
+					<div class="window"></div>
+					<div class="window"></div>
+					<div class="window"></div>
+					<div class="window"></div>
+				</div>
+				<div class="window-row2">
+					<div class="window"></div>
+					<div class="window"></div>
+					<div class="window"></div>
+					<div class="window"></div>
+					<div class="window"></div>
+					<div class="window"></div>
+					<div class="window"></div>
+					<div class="window"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 cargo-ship-right">
+			<div class="boxes"></div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-md-12 cargo-ship">
+		</div>
+	</div>
+
+
+</div> 
+
+
+<script src="javascript/game.js"></script>
+
+</body>
+</html>
